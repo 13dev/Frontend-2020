@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <navbar id="nav"></navbar>
-<!--    <div>-->
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--    </div>-->
+    <banner></banner>
+    <!--    <div>-->
+    <!--      <router-link to="/">Home</router-link> |-->
+    <!--      <router-link to="/about">About</router-link>-->
+    <!--    </div>-->
     <router-view />
   </div>
 </template>
 
 <script>
-  import Navbar from "./components/partials/Navbar";
+import Banner from "./components/partials/Banner";
 
-  export default {
-    name: 'app',
-    components: {
-      Navbar
-    }
+export default {
+  name: "app",
+  components: {
+    Banner
   }
+};
 </script>
 <style>
 #app {

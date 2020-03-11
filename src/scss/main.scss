@@ -1,18 +1,44 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
+
 //colors
-$purple: #8A4D76;
-$pink: #FA7C91;
+//$purple: #8A4D76;
+//$pink: #FA7C91;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
-$family-sans-serif: "Nunito", sans-serif;
 
 
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
+//$family-heading: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+//$family-sans-serif: "Open Sans", sans-serif;
+//font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
+//
+//$body-background-color: $beige-lighter;
+//$control-border-width: 2px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+//$bulmaswatch-import-font: false;
+$subtitle-size: 2rem;
+$subtitle-weight: 400!important;
+$title-size: 4rem;
+
+@import "~bulmaswatch/litera/_variables.scss";
 @import "~bulma/bulma.sass";
+@import "~bulmaswatch/litera/_overrides.scss";
+
+
+
+
+html {
+  overflow-y: hidden;
+  background-color: $beige-lighter;
+}
+
+#nav {
+  @include from($desktop)  {
+    padding: 0 50px;
+  }
+}
+
